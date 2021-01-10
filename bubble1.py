@@ -16,20 +16,6 @@ def bubble_sort(list_1):
                 list_1[i+1] = a
     return list_1
 
-#John Solution (not running)
-def bubble(list_2):
-    sorted = True
-    while not sorted:
-        for i in range(len(list_2)-1):
-            if list_2[i] > list_2[i+1]:
-                a = list_2[i]
-                b = list_2[i+1]
-                list_2[i] = b
-                list_2[i+1] = a
-            else:
-                sorted = False
-                
-
 print(bubble_sort([2, 4, 6, 3, 11, 5, 1]))
 # print(bubble_sort(one))
 # print(bubble_sort(two))
