@@ -17,3 +17,24 @@ function kids(integer, arr) {
 }
 
 console.log(kids(extraCandies, candies));
+
+// Long version of above (removing Math.max method and adding push)
+function long_kids(integer, arr) {
+    let new_arr = [];
+    let max = 0;
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[j] >= max) {
+            max = arr[j];
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if ((arr[i] + integer) >= max) {
+            new_arr.push(true)
+        } else {
+            new_arr.push(false)
+        }
+    }
+    return new_arr;
+}
+
+console.log(long_kids(extraCandies, candies));
