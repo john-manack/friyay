@@ -10,4 +10,4 @@ const reverseString = (strVar) => {
     return newString;
 }
 
-console.log(reverseString(string1));
+console.log("The reverse of ", string1, " is ", reverseString(string1));
