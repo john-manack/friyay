@@ -1,7 +1,7 @@
 'use strict';
 
 const string1 = "bingo";
-const string2 = "radar"
+const string2 = "radar";
 
 const checkPalindrome = (string) => {
     let newString = "";
